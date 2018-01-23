@@ -1,0 +1,32 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+plugins {
+    id 'io.franzbecker.gradle-lombok' version '1.11'
+    id 'org.springframework.boot' version '1.5.9.RELEASE'
+    id 'java'
+}
+
+group = ''
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+lombok {
+    version = "1.16.20"
+    sha256 = ""
+}
+
+dependencies {
+    compile 'com.google.guava:guava:23.6-jre'
+    compile 'org.springframework.boot:spring-boot-starter'
+    compile 'com.amazonaws:aws-java-sdk-core:1.11.222'
+    compile 'com.amazonaws:aws-java-sdk-dynamodb:1.11.222'
+    compile 'com.github.derjust:spring-data-dynamodb:4.5.0'
+}
