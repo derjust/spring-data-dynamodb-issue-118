@@ -26,8 +26,14 @@ public class ExampleRunner implements CommandLineRunner {
 
     log.info("All Customer Documents matching hashkey '1|terms':");
 
-    customerDocumentRepository.findByCustomerDocumentKey("1", "terms")
-        .forEach(customerDocument -> log.info(customerDocument.toString()));
+    try {
+
+      customerDocumentRepository.findByCustomerDocumentKey("1", "terms")
+          .forEach(customerDocument -> log.info(customerDocument.toString()));
+
+    } catch (Exception e) {
+      log.error("Error occurred retrieving records based on '1|terms'.", e);
+    }
 
   }
 

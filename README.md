@@ -1,7 +1,7 @@
 # spring-data-dynamodb-issue-118
-## Branch: `springboot-1.5.9`
+## Branch: `springboot-2.0.0`
 
-This repo contains a sample application that demonstrates [derjust/spring-data-dynamodb issues #118](https://github.com/derjust/spring-data-dynamodb/issues/118) working with SpringBoot 1.5.9 and `com.github.derjust:spring-data-dynamodb:4.5.0`.
+This repo contains a sample application that demonstrates the problem described with [derjust/spring-data-dynamodb issues #118](https://github.com/derjust/spring-data-dynamodb/issues/118) with SpringBoot 2.0.0.M7 and `com.github.derjust:spring-data-dynamodb:5.0.1`.
 
 ## Running with Gradle
 
